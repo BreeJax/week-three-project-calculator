@@ -1,1 +1,7 @@
-console.log("Sanity");
+let calculatorButtons = {
+  "0": 0, ".": ".", "=": sum, "+": +,
+  "1": 1, "2": 2, "3": 3, "-": -,
+  "4": 4, "5": 5, "6": 6, "x": *,
+ "7": 7, "8": 8, "9": 9, "/": /,
+  "C": Clear input, "Blank": input
+}
