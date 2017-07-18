@@ -5,13 +5,28 @@ body {
   align-items: center;
 }
 h1 {
-  padding-top: 0.5em;
+  padding-top: 0.05em;
   font-size: 3em;
 }
 
 table {
-  border-style: solid;
+  border: 1px solid #b6b6b4;
   border-collapse: collapse;
   width: 30em;
-  height: 40em;
+  height: 42em;
+  background-color: rebeccapurple;
+  color: #b6b6b4;
+}
+td {
+  border: 1px solid #b6b6b4;
+}
+td {
+  font-size: 2.5em;
+  text-align: center;
+}
+#showTheWork {
+  height: 4em;
+}
+.button:active {
+  background-color: #7f525d;
 }
