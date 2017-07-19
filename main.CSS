@@ -25,7 +25,9 @@ td {
   text-align: center;
 }
 #showTheWork {
-  height: 4em;
+  height: 3em;
+  padding: 0 0.5em;
+  text-align: right;
 }
 .button:active {
   background-color: #7f525d;

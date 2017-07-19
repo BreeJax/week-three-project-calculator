@@ -1,20 +1,55 @@
-let input = document.getElementsByClassName("input")
+//focus on equal button
 
-for (var i = 0; i < input.length; i++) {
-  input[i].onclick = function(e) {
-    console.log(this.getAttribute("data-value"))
+let input = document.getElementsByClassName("input")
+let clear = document.getElementById("clear")
+
+clear.onclick = function() {
+  addEventListener("click", window)
+  {
+    if (window.confirm("Are you sure you want to clear your history?")) {
+      console.clear(), (showTheWork.innerHTML = "")
+    }
   }
 }
 
+let value = document.querySelector("data-value")
+let showTheWork = document.getElementById("showTheWork")
+let symbol = document.getElementsByClassName("symbol")
+let equation = ""
+let display = ""
+showTheWork.textContent = ""
+
+for (var i = 0; i < input.length; i++) {
+  input[i].onclick = function(e) {
+    console.log(value)
+    var buttonValue = this.getAttribute("data-value")
+    equation += buttonValue
+    console.log(e.target.classList)
+
+    if (e.target.classList.contains("symbol")) {
+      showTheWork.textContent = ""
+    } else {
+      showTheWork.textContent += buttonValue
+    }
+  }
+}
 let b_equal = document.getElementById("sum")
 b_equal.onclick = function() {
   console.log("=")
+  //looking at equation string
+  //need function fort string and returns summed equation
+  //take equation and show in the display
+  //cry
+  //set equation to sum
 }
 
-let _clear = document.getElementById("clear")
-_clear.onclick = function() {
-  console.clear()
-}
+// function showTheWork(clicking) {
+//   let numberClicked = clicking.target.data_value
+//   let OperationClicked = clicking.target.id
+//   showTheWork.innerHTML += numberClicked
+//   showTheWork.innerHTML += OperationClicked
+// }
+
 // function square(num) {
 //   return num * num
 // }
